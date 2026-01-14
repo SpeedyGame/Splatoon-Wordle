@@ -1,0 +1,53 @@
+{
+    "weapons": 
+    [
+        {
+            "name": "Splattershot",
+            "sub": "Burst Bomb",
+            "special": "Bomb Rush",
+            "class": "Shooter"
+        },
+        {
+            "name": "Splat Roller",
+            "sub": "Suction Bomb",
+            "special": "Killer Wail",
+            "class": "Roller"
+        },
+        {
+            "name": "Splat Charger",
+            "sub": "Splat Bomb",
+            "special": "Bomb Rush",
+            "class": "Charger"
+        },
+        {
+            "name": "Slosher",
+            "sub": "Burst Bomb",
+            "special": "Inkstrike",
+            "class": "Slosher"
+        },
+        {
+            "name": "Heavy Splatling",
+            "sub": "Splash Wall",
+            "special": "Inkstrike",
+            "class": "Splatling"
+        },
+        {
+            "name": "Inkbrush",
+            "sub": "Sprinkler",
+            "special": "Inkstrike",
+            "class": "Roller"
+        },
+        {
+            "name": "Blaster",
+            "sub": "Disruptor",
+            "special": "Killer Wail",
+            "class": "Shooter"
+        },
+        {
+            "name": "Wasabi Splattershot",
+            "sub": "Splat Bomb",
+            "special": "Inkstrike",
+            "class": "Shooter"
+        }
+    ]
+}
