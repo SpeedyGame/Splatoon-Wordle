@@ -1,53 +1,550 @@
 {
-    "weapons": 
-    [
-        {
-            "name": "Splattershot",
-            "sub": "Burst Bomb",
-            "special": "Bomb Rush",
-            "class": "Shooter"
-        },
-        {
-            "name": "Splat Roller",
-            "sub": "Suction Bomb",
-            "special": "Killer Wail",
-            "class": "Roller"
-        },
-        {
-            "name": "Splat Charger",
-            "sub": "Splat Bomb",
-            "special": "Bomb Rush",
-            "class": "Charger"
-        },
-        {
-            "name": "Slosher",
-            "sub": "Burst Bomb",
-            "special": "Inkstrike",
-            "class": "Slosher"
-        },
-        {
-            "name": "Heavy Splatling",
-            "sub": "Splash Wall",
-            "special": "Inkstrike",
-            "class": "Splatling"
-        },
-        {
-            "name": "Inkbrush",
-            "sub": "Sprinkler",
-            "special": "Inkstrike",
-            "class": "Roller"
-        },
-        {
-            "name": "Blaster",
-            "sub": "Disruptor",
-            "special": "Killer Wail",
-            "class": "Shooter"
-        },
-        {
-            "name": "Wasabi Splattershot",
-            "sub": "Splat Bomb",
-            "special": "Inkstrike",
-            "class": "Shooter"
-        }
-    ]
+  "weapons": [
+    {
+      "name": "Splattershot Jr.",
+      "sub": "Splat Bomb",
+      "special": "Bubbler",
+      "class": "Shooter"
+    },
+    {
+      "name": "Custom Splattershot Jr.",
+      "sub": "Disruptor",
+      "special": "Echolocator",
+      "class": "Shooter"
+    },
+    {
+      "name": "Splattershot",
+      "sub": "Burst Bomb",
+      "special": "Bomb Rush",
+      "class": "Shooter"
+    },
+    {
+      "name": "Hero Charger Replica",
+      "sub": "Splat Bomb",
+      "special": "Bomb Rush",
+      "class": "Charger"
+    },
+    {
+      "name": "Hero Roller Replica",
+      "sub": "Suction Bomb",
+      "special": "Killer Wail",
+      "class": "Roller"
+    },
+    {
+      "name": "Hero Shot Replica",
+      "sub": "Burst Bomb",
+      "special": "Bomb Rush",
+      "class": "Shooter"
+    },
+    {
+      "name": "Splat Charger",
+      "sub": "Splat Bomb",
+      "special": "Bomb Rush",
+      "class": "Charger"
+    },
+    {
+      "name": "Splat Roller",
+      "sub": "Suction Bomb",
+      "special": "Killer Wail",
+      "class": "Roller"
+    },
+    {
+      "name": "Kelp Splat Charger",
+      "sub": "Sprinkler",
+      "special": "Killer Wail",
+      "class": "Charger"
+    },
+    {
+      "name": "Tentatek Splattershot",
+      "sub": "Suction Bomb",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    },
+    {
+      "name": "Aerospray RG",
+      "sub": "Ink Mine",
+      "special": "Inkstrike",
+      "class": "Shooter"
+    },
+    {
+      "name": ".52 Gal",
+      "sub": "Splash Wall",
+      "special": "Killer Wail",
+      "class": "Shooter"
+    },
+    {
+      "name": "N-ZAP '85",
+      "sub": "Splat Bomb",
+      "special": "Echolocator",
+      "class": "Shooter"
+    },
+    {
+      "name": "Slosher",
+      "sub": "Burst Bomb",
+      "special": "Inkstrike",
+      "class": "Slosher"
+    },
+    {
+      "name": "Classic Squiffer",
+      "sub": "Point Sensor",
+      "special": "Bubbler",
+      "class": "Charger"
+    },
+    {
+      "name": "Heavy Splatling",
+      "sub": "Splash Wall",
+      "special": "Inkstrike",
+      "class": "Splatling"
+    },
+    {
+      "name": "Aerospray MG",
+      "sub": "Seeker",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    },
+    {
+      "name": "Krak-On Splat Roller",
+      "sub": "Squid Beakon",
+      "special": "Kraken",
+      "class": "Roller"
+    },
+    {
+      "name": "Splash-o-matic",
+      "sub": "Suction Bomb",
+      "special": "Bomb Rush",
+      "class": "Shooter"
+    },
+    {
+      "name": "Inkbrush",
+      "sub": "Sprinkler",
+      "special": "Inkstrike",
+      "class": "Roller"
+    },
+    {
+      "name": "Jet Squelcher",
+      "sub": "Splash Wall",
+      "special": "Inkstrike",
+      "class": "Shooter"
+    },
+    {
+      "name": "Mini Splatling",
+      "sub": "Suction Bomb",
+      "special": "Inkzooka",
+      "class": "Splatling"
+    },
+    {
+      "name": "N-ZAP '89",
+      "sub": "Sprinkler",
+      "special": "Inkstrike",
+      "class": "Shooter"
+    },
+    {
+      "name": "Blaster",
+      "sub": "Disruptor",
+      "special": "Killer Wail",
+      "class": "Shooter"
+    },
+    {
+      "name": "Heavy Splatling Deco",
+      "sub": "Point Sensor",
+      "special": "Kraken",
+      "class": "Splatling"
+    },
+    {
+      "name": "L-3 Nozzlenose",
+      "sub": "Disruptor",
+      "special": "Killer Wail",
+      "class": "Shooter"
+    },
+    {
+      "name": "Neo Splash-o-matic",
+      "sub": "Burst Bomb",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    },
+    {
+      "name": "Tri-Slosher",
+      "sub": "Disruptor",
+      "special": "Bubbler",
+      "class": "Slosher"
+    },
+    {
+      "name": "Carbon Roller",
+      "sub": "Burst Bomb",
+      "special": "Inkzooka",
+      "class": "Roller"
+    },
+    {
+      "name": "H-3 Nozzlenose",
+      "sub": "Suction Bomb",
+      "special": "Echolocator",
+      "class": "Shooter"
+    },
+    {
+      "name": "Slosher Deco",
+      "sub": "Splash Wall",
+      "special": "Kraken",
+      "class": "Slosher"
+    },
+    {
+      "name": "Splattershot Pro",
+      "sub": "Splat Bomb",
+      "special": "Inkstrike",
+      "class": "Shooter"
+    },
+    {
+      "name": ".52 Gal Deco",
+      "sub": "Seeker",
+      "special": "Inkstrike",
+      "class": "Shooter"
+    },
+    {
+      "name": "Hydra Splatling",
+      "sub": "Splat Bomb",
+      "special": "Echolocator",
+      "class": "Splatling"
+    },
+    {
+      "name": "Inkbrush Nouveau",
+      "sub": "Ink Mine",
+      "special": "Bubbler",
+      "class": "Roller"
+    },
+    {
+      "name": "Luna Blaster",
+      "sub": "Ink Mine",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    },
+    {
+      "name": "New Squiffer",
+      "sub": "Ink Mine",
+      "special": "Inkzooka",
+      "class": "Charger"
+    },
+    {
+      "name": ".96 Gal",
+      "sub": "Sprinkler",
+      "special": "Echolocator",
+      "class": "Shooter"
+    },
+    {
+      "name": "Octobrush",
+      "sub": "Squid Beakon",
+      "special": "Kraken",
+      "class": "Roller"
+    },
+    {
+      "name": "Sloshing Machine",
+      "sub": "Splat Bomb",
+      "special": "Bomb Rush",
+      "class": "Slosher"
+    },
+    {
+      "name": "Sploosh-o-matic",
+      "sub": "Squid Beakon",
+      "special": "Killer Wail",
+      "class": "Shooter"
+    },
+    {
+      "name": "Carbon Roller Deco",
+      "sub": "Seeker",
+      "special": "Bomb Rush",
+      "class": "Roller"
+    },
+    {
+      "name": "L-3 Nozzlenose D",
+      "sub": "Burst Bomb",
+      "special": "Kraken",
+      "class": "Shooter"
+    },
+    {
+      "name": "Splatterscope",
+      "sub": "Splat Bomb",
+      "special": "Bomb Rush",
+      "class": "Charger"
+    },
+    {
+      "name": "Zink Mini Splatling",
+      "sub": "Disruptor",
+      "special": "Bubbler",
+      "class": "Splatling"
+    },
+    {
+      "name": ".96 Gal Deco",
+      "sub": "Splash Wall",
+      "special": "Kraken",
+      "class": "Shooter"
+    },
+    {
+      "name": "H-3 Nozzlenose D",
+      "sub": "Point Sensor",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    },
+    {
+      "name": "Range Blaster",
+      "sub": "Splash Wall",
+      "special": "Inkstrike",
+      "class": "Shooter"
+    },
+    {
+      "name": "Rapid Blaster",
+      "sub": "Ink Mine",
+      "special": "Bubbler",
+      "class": "Shooter"
+    },
+    {
+      "name": "Bamboozler 14 Mk I",
+      "sub": "Splash Wall",
+      "special": "Killer Wail",
+      "class": "Charger"
+    },
+    {
+      "name": "Custom Jet Squelcher",
+      "sub": "Burst Bomb",
+      "special": "Kraken",
+      "class": "Shooter"
+    },
+    {
+      "name": "Dynamo Roller",
+      "sub": "Sprinkler",
+      "special": "Echolocator",
+      "class": "Roller"
+    },
+    {
+      "name": "Luna Blaster Neo",
+      "sub": "Splat Bomb",
+      "special": "Bomb Rush",
+      "class": "Shooter"
+    },
+    {
+      "name": "Tri-Slosher Nouveau",
+      "sub": "Seeker",
+      "special": "Echolocator",
+      "class": "Slosher"
+    },
+    {
+      "name": "Dual Squelcher",
+      "sub": "Splat Bomb",
+      "special": "Echolocator",
+      "class": "Shooter"
+    },
+    {
+      "name": "Octobrush Nouveau",
+      "sub": "Splat Bomb",
+      "special": "Inkzooka",
+      "class": "Roller"
+    },
+    {
+      "name": "Rapid Blaster Pro",
+      "sub": "Seeker",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    },
+    {
+      "name": "Bamboozler 14 Mk II",
+      "sub": "Disruptor",
+      "special": "Echolocator",
+      "class": "Charger"
+    },
+    {
+      "name": "Custom Blaster",
+      "sub": "Point Sensor",
+      "special": "Bubbler",
+      "class": "Shooter"
+    },
+    {
+      "name": "Custom Range Blaster",
+      "sub": "Splat Bomb",
+      "special": "Kraken",
+      "class": "Shooter"
+    },
+    {
+      "name": "Kelp Splatterscope",
+      "sub": "Sprinkler",
+      "special": "Killer Wail",
+      "class": "Charger"
+    },
+    {
+      "name": "Custom Dual Squelcher",
+      "sub": "Squid Beakon",
+      "special": "Killer Wail",
+      "class": "Shooter"
+    },
+    {
+      "name": "E-liter 3K",
+      "sub": "Burst Bomb",
+      "special": "Echolocator",
+      "class": "Charger"
+    },
+    {
+      "name": "Neo Sploosh-o-matic",
+      "sub": "Point Sensor",
+      "special": "Kraken",
+      "class": "Shooter"
+    },
+    {
+      "name": "Sloshing Machine Neo",
+      "sub": "Point Sensor",
+      "special": "Inkzooka",
+      "class": "Slosher"
+    },
+    {
+      "name": "Custom E-liter 3K",
+      "sub": "Squid Beakon",
+      "special": "Kraken",
+      "class": "Charger"
+    },
+    {
+      "name": "E-liter 3K Scope",
+      "sub": "Burst Bomb",
+      "special": "Echolocator",
+      "class": "Charger"
+    },
+    {
+      "name": "Rapid Blaster Deco",
+      "sub": "Suction Bomb",
+      "special": "Bomb Rush",
+      "class": "Shooter"
+    },
+    {
+      "name": "Aerospray PG",
+      "sub": "Burst Bomb",
+      "special": "Kraken",
+      "class": "Shooter"
+    },
+    {
+      "name": "Bamboozler 14 Mk III",
+      "sub": "Burst Bomb",
+      "special": "Inkstrike",
+      "class": "Charger"
+    },
+    {
+      "name": "Bento Splat Charger",
+      "sub": "Splash Wall",
+      "special": "Echolocator",
+      "class": "Charger"
+    },
+    {
+      "name": "Bento Splatterscope",
+      "sub": "Splash Wall",
+      "special": "Echolocator",
+      "class": "Charger"
+    },
+    {
+      "name": "Berry Splattershot Pro",
+      "sub": "Suction Bomb",
+      "special": "Bomb Rush",
+      "class": "Shooter"
+    },
+    {
+      "name": "Cherry H-3 Nozzlenose",
+      "sub": "Splash Wall",
+      "special": "Bubbler",
+      "class": "Shooter"
+    },
+    {
+      "name": "CoroCoro Splat Roller",
+      "sub": "Splash Wall",
+      "special": "Inkzooka",
+      "class": "Roller"
+    },
+    {
+      "name": "Custom E-liter 3K Scope",
+      "sub": "Squid Beakon",
+      "special": "Kraken",
+      "class": "Charger"
+    },
+    {
+      "name": "Custom Hydra Splatling",
+      "sub": "Sprinkler",
+      "special": "Bubbler",
+      "class": "Splatling"
+    },
+    {
+      "name": "Forge Splattershot Pro",
+      "sub": "Point Sensor",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    },
+    {
+      "name": "Fresh Squiffer",
+      "sub": "Suction Bomb",
+      "special": "Kraken",
+      "class": "Charger"
+    },
+    {
+      "name": "Gold Dynamo Roller",
+      "sub": "Splat Bomb",
+      "special": "Inkstrike",
+      "class": "Roller"
+    },
+    {
+      "name": "Grim Range Blaster",
+      "sub": "Burst Bomb",
+      "special": "Killer Wail",
+      "class": "Shooter"
+    },
+    {
+      "name": "Heavy Splatling Remix",
+      "sub": "Sprinkler",
+      "special": "Killer Wail",
+      "class": "Splatling"
+    },
+    {
+      "name": "N-ZAP '83",
+      "sub": "Point Sensor",
+      "special": "Kraken",
+      "class": "Shooter"
+    },
+    {
+      "name": "Permanent Inkbrush",
+      "sub": "Splat Bomb",
+      "special": "Kraken",
+      "class": "Roller"
+    },
+    {
+      "name": "Rapid Blaster Pro Deco",
+      "sub": "Disruptor",
+      "special": "Killer Wail",
+      "class": "Shooter"
+    },
+    {
+      "name": "Refurbished Mini Splatling",
+      "sub": "Burst Bomb",
+      "special": "Bomb Rush",
+      "class": "Splatling"
+    },
+    {
+      "name": "Soda Slosher",
+      "sub": "Splat Bomb",
+      "special": "Inkzooka",
+      "class": "Slosher"
+    },
+    {
+      "name": "Sploosh-o-matic 7",
+      "sub": "Splat Bomb",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    },
+    {
+      "name": "Tempered Dynamo Roller",
+      "sub": "Seeker",
+      "special": "Killer Wail",
+      "class": "Roller"
+    },
+    {
+      "name": "Wasabi Splattershot",
+      "sub": "Splat Bomb",
+      "special": "Inkstrike",
+      "class": "Shooter"
+    },
+    {
+      "name": "Octoshot Replica",
+      "sub": "Suction Bomb",
+      "special": "Inkzooka",
+      "class": "Shooter"
+    }
+  ]
 }
