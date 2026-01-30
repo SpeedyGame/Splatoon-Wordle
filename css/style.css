@@ -1,0 +1,91 @@
+﻿/* :root {
+    --blue: #00379E;
+    --dark-blue: #023567;
+    --lavender: #C29CCE;
+    --gray: #C4C4C4;
+    --foggy-blue: rgba(194, 156, 206, 0.4);
+    --yellow: #FFB900;
+} */
+
+/* Document */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height:100%;
+    /* font-size: 62.5%; Makes calculating em easier - px/10 */
+}
+
+/* Body */
+body {
+    height:100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    height: 55px;
+    background-color: blue;
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+/* Text */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 3.33rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 2.88rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 2.43rem;
+}
+
+h4 {
+    font-weight: 400; /* Regular */
+    font-size: 1.89rem;
+}
+
+h5 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400; /* Regular */
+    font-size: 1.71rem; /*-----------16PX???--------*/
+}
+
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400; /* Regular */
+    /* font-size: 1.71rem; */
+    /* border-radius: 0; */
+    /* border: none; */
+    cursor: pointer;
+    /* background-color: var(--blue); */
+    /* color: white; */
+    /* height:3.78rem; */
+    /* width:15.1rem; */
+    /* padding:0; */
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.44rem;
+    line-height: 2.25rem;
+}

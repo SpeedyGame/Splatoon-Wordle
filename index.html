@@ -1,34 +1,84 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Splat-dle</title>
     <meta name="author" content="Steven Mensah" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <style>
+      h1 {
+        color:rgb(255, 255, 255)
+      }
+      body {
+        background-color: rgb(53, 50, 50);
+      }
+      table,
+      th,
+      td {
+        border-bottom: 1px solid rgb(0, 0, 0);
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        background-color: powderblue;
+        text-align: center;
+        padding: 5px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        padding: 16px;
+      }
+      table {
+        margin: auto;
+      }
+      /* select {
+        margin:auto
+      } */
+      #weaponDropdown {
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
     <!-- <link href="css/style.css" rel="stylesheet" /> -->
   </head>
-
-  <body>
-    <!-- <label for="weapon">Your weapon is:</label> -->
-    <div id="weapon"></div>
-    <div>
+  <main>
+    <body>
+      <!-- <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul> -->
+      <h1 style="margin-left: 25%">Start guessing...</h1>
+      <div id="weapon"></div>
       <!-- <button id="rand-button">Give me a weapon!</button> -->
-      <div id="weaponDropdown">
+      <div id="weaponDropdown" style="width: 50%">
         <select id="weaponList"></select>
+        <button id="guess-button">Guess</button>
       </div>
-      <button id="guess-button">Guess</button>
-    </div>
-    <table id="weaponTable">
-      <tr>
-        <th>Main</th>
-        <th>Sub</th>
-        <th>Special</th>
-        <th>Class</th>
-      </tr>
-    </table>
-    
-    <script src="js/script.js"></script>
-  </body>
+
+      <div>
+        <table id="weaponTable" style="width: 50%">
+          <tr>
+            <th>Main</th>
+            <th>Sub</th>
+            <th>Special</th>
+            <th>Class</th>
+          </tr>
+        </table>
+      </div>
+
+      <script src="js/script.js"></script>
+    </body>
+  </main>
 </html>

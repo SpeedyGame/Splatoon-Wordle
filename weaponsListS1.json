@@ -118,7 +118,7 @@
       "name": "Inkbrush",
       "sub": "Sprinkler",
       "special": "Inkstrike",
-      "class": "Roller"
+      "class": "Brush"
     },
     {
       "name": "Jet Squelcher",
@@ -142,7 +142,7 @@
       "name": "Blaster",
       "sub": "Disruptor",
       "special": "Killer Wail",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Heavy Splatling Deco",
@@ -208,13 +208,13 @@
       "name": "Inkbrush Nouveau",
       "sub": "Ink Mine",
       "special": "Bubbler",
-      "class": "Roller"
+      "class": "Brush"
     },
     {
       "name": "Luna Blaster",
       "sub": "Ink Mine",
       "special": "Inkzooka",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "New Squiffer",
@@ -232,7 +232,7 @@
       "name": "Octobrush",
       "sub": "Squid Beakon",
       "special": "Kraken",
-      "class": "Roller"
+      "class": "Brush"
     },
     {
       "name": "Sloshing Machine",
@@ -286,13 +286,13 @@
       "name": "Range Blaster",
       "sub": "Splash Wall",
       "special": "Inkstrike",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Rapid Blaster",
       "sub": "Ink Mine",
       "special": "Bubbler",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Bamboozler 14 Mk I",
@@ -316,7 +316,7 @@
       "name": "Luna Blaster Neo",
       "sub": "Splat Bomb",
       "special": "Bomb Rush",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Tri-Slosher Nouveau",
@@ -334,13 +334,13 @@
       "name": "Octobrush Nouveau",
       "sub": "Splat Bomb",
       "special": "Inkzooka",
-      "class": "Roller"
+      "class": "Brush"
     },
     {
       "name": "Rapid Blaster Pro",
       "sub": "Seeker",
       "special": "Inkzooka",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Bamboozler 14 Mk II",
@@ -352,13 +352,13 @@
       "name": "Custom Blaster",
       "sub": "Point Sensor",
       "special": "Bubbler",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Custom Range Blaster",
       "sub": "Splat Bomb",
       "special": "Kraken",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Kelp Splatterscope",
@@ -406,7 +406,7 @@
       "name": "Rapid Blaster Deco",
       "sub": "Suction Bomb",
       "special": "Bomb Rush",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Aerospray PG",
@@ -484,7 +484,7 @@
       "name": "Grim Range Blaster",
       "sub": "Burst Bomb",
       "special": "Killer Wail",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Heavy Splatling Remix",
@@ -502,13 +502,13 @@
       "name": "Permanent Inkbrush",
       "sub": "Splat Bomb",
       "special": "Kraken",
-      "class": "Roller"
+      "class": "Brush"
     },
     {
       "name": "Rapid Blaster Pro Deco",
       "sub": "Disruptor",
       "special": "Killer Wail",
-      "class": "Shooter"
+      "class": "Blaster"
     },
     {
       "name": "Refurbished Mini Splatling",

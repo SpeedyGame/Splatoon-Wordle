@@ -4,7 +4,7 @@ let answerWeapon; //variable for the random weapon chosen to guess
 
 async function getData() {
   try {
-    const response = await fetch("weaponsListS1.json");
+    const response = await fetch("weaponslists1.json");
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
@@ -21,6 +21,7 @@ async function getData() {
     console.error(error.message);
   }
   console.log("Weapons loaded:", weapons.length);
+  
 }
 
 getData();
@@ -57,6 +58,7 @@ function guessWeapon() {
   foundAnswerWeapon = weapons.find((x) => x.name == weaponAnswer); //finds the object within the array given a name from randomWeapon()
 
   const row = weaponGuessTable.insertRow();
+  // row.style.height = "200px";
 
   const mainCell = row.insertCell();
   const subCell = row.insertCell();
@@ -87,3 +89,4 @@ function guessWeapon() {
 
 // document.getElementById("rand-button").addEventListener("click", randomWeapon);
 document.getElementById("guess-button").addEventListener("click", guessWeapon);
+
