@@ -52,7 +52,9 @@ function randomWeapon() {
 
 // allows the user to guess the randomly selected weapon
 function guessWeapon() {
-  const weaponGuess = document.getElementById("weaponList").value;
+  //const weaponGuess = document.getElementById("weaponList").value;
+  const weaponGuess = document.querySelector("input[list=weaponList]").value
+  if (weaponGuess == "") return;
   const foundGuessedWeapon = weapons.find((x) => x.name == weaponGuess); //finds the object within the array given a name from the dropdown menu
   weaponAnswer = document.getElementById("weapon").value;
   foundAnswerWeapon = weapons.find((x) => x.name == weaponAnswer); //finds the object within the array given a name from randomWeapon()
@@ -85,13 +87,19 @@ function guessWeapon() {
       ? (classCell.style.color = "green")
       : (classCell.style.color = "red");
   }
+  document.querySelector("input[list=weaponList]").value = "";
 }
 
+function testPrintDataListValue() {
+  console.log(document.querySelector("input[list=weaponList]").value) 
+}
 // resets the board and starts a new game with a new weapon
 function reset() {
   weaponGuessTable.innerHTML = "";
+  document.querySelector("input[list=weaponList]").value = "";
   randomWeapon();
 }
 // document.getElementById("rand-button").addEventListener("click", randomWeapon);
 document.getElementById("guess-button").addEventListener("click", guessWeapon);
+// document.getElementById("guess-button").addEventListener("click", testPrintDataListValue);
 document.getElementById("new-game").addEventListener("click", reset);
