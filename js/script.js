@@ -20,7 +20,7 @@ async function getData() {
   } catch (error) {
     console.error(error.message);
   }
-  console.log("Weapons loaded:", weapons.length);
+  // console.log("Weapons loaded:", weapons.length);
   
 }
 
@@ -43,7 +43,8 @@ function createWeaponDropdown() {
 function randomWeapon() {
   const randWeapon = weapons[Math.floor(Math.random() * weapons.length)];
 
-  console.log(randWeapon.name);
+  // console.log(randWeapon.name);
+
   // document.getElementById("weapon").innerText = randWeapon.name;
   document.getElementById("weapon").value = randWeapon.name;
 
