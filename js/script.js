@@ -1,159 +1,106 @@
-// const weapons = [
-//   "Splattershot",
-//   "Splat Roller",
-//   "Splat Charger",
-//   "Blaster",
-//   "Inkbrush",
-//   "Slosher",
-// ];
+let weapons = [];
 
-let weaponsS1;
+let answerWeapon; //variable for the random weapon chosen to guess
 
-fetch("weaponsListS1.json")
-  .then(res => res.json())
-  .then(data => {
-    weaponsS1 = data;
-    createWeaponDropdown(); // safe to call here
-  })
-  .catch(err => console.error(err));
-
-async function createWeaponDropdown() {
+async function getData() {
   try {
-    const response = await fetch("weaponsListS1.json");
+    const response = await fetch("weaponslists1.json");
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      throw new Error(`Response status: ${response.status}`);
     }
 
-    const weaponsS1 = await response.json();
+    const data = await response.json();
+    // console.log(typeof data);
+    weapons = data.weapons; //setting weapons to data.weapons because data has an attribute weapons in it
 
-    // ----- DROPDOWN -----
-    const weaponDiv = document.getElementById("weaponDropdown");
-    const weaponList = document.createElement("select");
-    weaponList.id = "weaponList";
-    weaponDiv.appendChild(weaponList);
+    createWeaponDropdown();
+    answerWeapon = randomWeapon();
 
-    for (let weapon of weaponsS1.weapons) {
-      let option = document.createElement("option");
-      option.value = weapon;
-      option.textContent = weapon.name;
-      weaponList.appendChild(option);
-    }
-
-    // // ----- TABLE -----
-    // const weaponGuessTable = document.getElementById("weaponTable");
-
-    // for (let weapon of weaponsS1.weapons) {
-    //   const row = weaponGuessTable.insertRow();
-
-    //   row.insertCell().textContent = weapon.name;
-    //   row.insertCell().textContent = weapon.sub;
-    //   row.insertCell().textContent = weapon.special;
-    //   row.insertCell().textContent = weapon.class;
-    // }
-
+    // console.log(result);
   } catch (error) {
-    console.error("Failed to load weapons:", error);
+    console.error(error.message);
+  }
+  // console.log("Weapons loaded:", weapons.length);
+  
+}
+
+getData();
+const weaponGuessTable = document.getElementById("weaponTable");
+
+// creates dropdown menu of weapons given a hardcoded array (eventually want to make a read .json implementation)
+function createWeaponDropdown() {
+  const weaponList = document.getElementById("weaponList");
+
+  for (let i = 0; i < weapons.length; i++) {
+    const option = document.createElement("option");
+    option.value = weapons[i].name;
+    option.innerHTML = weapons[i].name;
+    weaponList.appendChild(option);
   }
 }
 
-//   let weaponDiv = document.getElementById("weaponDropdown");
-
-//   const weaponList = document.createElement("select");
-//   weaponList.id = "weaponList";
-//   weaponDiv.appendChild(weaponList);
-
-//   for (let i = 0; i < weaponsS1.weapons.length; i++) {
-//     const option = document.createElement("option");
-//     option.value = weaponsS1.weapons[i].name;
-//     option.text = weaponsS1.weapons[i].name;
-//     weaponList.appendChild(option);
-//   }
-
-//   const weaponGuessTable = document.getElementById("weaponTable")
-
-//   for (let i = 0; i < weaponsS1.weapons.length; i++) {
-//     const nameRow = weaponGuessTable.insertRow();
-
-//     const newCell = nameRow.insertCell();
-//     const newText = document.createTextNode(weaponsS1.weapons[i].name)
-//     newCell.appendChild(newText);
-
-//     const newCell2 = nameRow.insertCell();
-//     const newText2 = document.createTextNode(weaponsS1.weapons[i].sub)
-//     newCell2.appendChild(newText2);
-
-//     const newCell3 = nameRow.insertCell();
-//     const newText3 = document.createTextNode(weaponsS1.weapons[i].special)
-//     newCell3.appendChild(newText3);
-
-//     const newCell4 = nameRow.insertCell();
-//     const newText4 = document.createTextNode(weaponsS1.weapons[i].class)
-//     newCell4.appendChild(newText4);
-//   }
-// }
+// chooses a weapon at random given a hardcoded array (eventually want to make a read .json implementation)
 function randomWeapon() {
-  const randWeapon = (document.getElementById("weapon").innerHTML =
-    weapons[Math.floor(Math.random() * weapons.length)]);
-  document.getElementById("weapon").value = randWeapon;
+  const randWeapon = weapons[Math.floor(Math.random() * weapons.length)];
+
+  // console.log(randWeapon.name);
+
+  // document.getElementById("weapon").innerText = randWeapon.name;
+  document.getElementById("weapon").value = randWeapon.name;
+
+  return randWeapon;
 }
 
+// allows the user to guess the randomly selected weapon
 function guessWeapon() {
-  weaponGuess = document.getElementById("weaponList");
+  //const weaponGuess = document.getElementById("weaponList").value;
+  const weaponGuess = document.querySelector("input[list=weaponList]").value
+  if (weaponGuess == "") return;
+  const foundGuessedWeapon = weapons.find((x) => x.name == weaponGuess); //finds the object within the array given a name from the dropdown menu
   weaponAnswer = document.getElementById("weapon").value;
+  foundAnswerWeapon = weapons.find((x) => x.name == weaponAnswer); //finds the object within the array given a name from randomWeapon()
 
-  // ----- TABLE -----
-    const weaponGuessTable = document.getElementById("weaponTable");
-    
-    console.log(weaponGuess.value.id);
+  const row = weaponGuessTable.insertRow();
+  // row.style.height = "200px";
 
-  //   const row = weaponGuessTable.insertRow();
-    
-  //   row.insertCell().textContent = weaponGuess.value;
-  //   // row.insertCell().textContent = weapon.sub;
-  //   // row.insertCell().textContent = weapon.special;
-  //   // row.insertCell().textContent = weapon.class;
-  
-  // if (weaponGuess == weaponAnswer) {
-  //   console.log("You guessed the right weapon!");
-  // } else {
-  //   console.log("You guessed the wrong weapon...");
-  // }
-  
-  //   console.log(document.getElementById("weaponList").value);
-  //   console.log(document.getElementById("weapon").value);
+  const mainCell = row.insertCell();
+  const subCell = row.insertCell();
+  const specialCell = row.insertCell();
+  const classCell = row.insertCell();
+
+  mainCell.innerText = foundGuessedWeapon.name;
+  subCell.innerText = foundGuessedWeapon.sub;
+  specialCell.innerText = foundGuessedWeapon.special;
+  classCell.innerText = foundGuessedWeapon.class;
+
+  if (weaponGuess == weaponAnswer) { 
+    row.style.color = "green";
+    console.log("You guessed the right weapon!");
+  } else {
+    mainCell.style.color = "red";
+    foundGuessedWeapon.sub == foundAnswerWeapon.sub
+      ? (subCell.style.color = "green")
+      : (subCell.style.color = "red");
+    foundGuessedWeapon.special == foundAnswerWeapon.special
+      ? (specialCell.style.color = "green")
+      : (specialCell.style.color = "red");
+    foundGuessedWeapon.class == foundAnswerWeapon.class
+      ? (classCell.style.color = "green")
+      : (classCell.style.color = "red");
+  }
+  document.querySelector("input[list=weaponList]").value = "";
 }
 
-document.getElementById("button").addEventListener("click", randomWeapon);
+function testPrintDataListValue() {
+  console.log(document.querySelector("input[list=weaponList]").value) 
+}
+// resets the board and starts a new game with a new weapon
+function reset() {
+  weaponGuessTable.innerHTML = "";
+  document.querySelector("input[list=weaponList]").value = "";
+  randomWeapon();
+}
+// document.getElementById("rand-button").addEventListener("click", randomWeapon);
 document.getElementById("guess-button").addEventListener("click", guessWeapon);
-
-// function createWeaponDropdown() {
-//   if(!weaponsS1) {
-//     console.log("Weapons not loaded yet!");
-//     return;
-//   }
-  
-//   console.log("Weapons are loaded, creating dropdown.")
-//   let weaponDiv = document.getElementById("weaponDropdown");
-
-//   const weaponList = document.createElement("select");
-//   weaponList.id = "weaponList";
-//   weaponDiv.appendChild(weaponList);
-
-//   for (let i = 0; i < weaponsS1.weapons.length; i++) {
-//     const option = document.createElement("option");
-//     option.value = weaponsS1.weapons[i].name;
-//     option.text = weaponsS1.weapons[i].name;
-//     weaponList.appendChild(option);
-//   }
-// }
-// function createTable() {
-//   const weaponGuessTable = document.getElementById("weaponTable")
-//   const nameRow = weaponGuessTable.insertRow();
-
-//   const newCell = nameRow.insertCell();
-//   const newText = document.createTextNode(weaponsS1.weapons[0].name)
-//   newCell.appendChild(newText);
-// }
-// createTable();
-
-// console.log(weaponsS1);
+// document.getElementById("guess-button").addEventListener("click", testPrintDataListValue);
+document.getElementById("new-game").addEventListener("click", reset);
