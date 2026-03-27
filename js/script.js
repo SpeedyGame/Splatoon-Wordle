@@ -70,7 +70,7 @@ function guessWeapon() {
   specialCell.innerText = foundGuessedWeapon.special;
   classCell.innerText = foundGuessedWeapon.class;
 
-  if (weaponGuess == weaponAnswer) {
+  if (weaponGuess == weaponAnswer) { 
     row.style.color = "green";
     console.log("You guessed the right weapon!");
   } else {
@@ -87,6 +87,11 @@ function guessWeapon() {
   }
 }
 
+// resets the board and starts a new game with a new weapon
+function reset() {
+  weaponGuessTable.innerHTML = "";
+  randomWeapon();
+}
 // document.getElementById("rand-button").addEventListener("click", randomWeapon);
 document.getElementById("guess-button").addEventListener("click", guessWeapon);
-
+document.getElementById("new-game").addEventListener("click", reset);
