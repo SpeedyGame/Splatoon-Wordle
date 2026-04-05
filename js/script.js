@@ -4,7 +4,7 @@ let answerWeapon; //variable for the random weapon chosen to guess
 
 async function getData() {
   try {
-    const response = await fetch("weaponslists1.json");
+    const response = await fetch("weaponsListS1.json");
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
